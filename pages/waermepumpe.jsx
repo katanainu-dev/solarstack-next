@@ -32,7 +32,7 @@ export default function Waermepumpe() {
         .foerd-list { list-style: none; }
         .foerd-list li { display: flex; align-items: baseline; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--gray-100); font-size: 16px; }
         .foerd-list li:last-child { border-bottom: none; }
-        .foerd-pct { font-size: 28px; font-weight: 700; color: var(--dark); flex-shrink: 0; width: 60px; }
+        .foerd-pct { font-size: 28px; font-weight: 700; color: var(--dark); flex-shrink: 0; min-width: 95px; white-space: nowrap; }
         @media (max-width: 960px) { .split, .cost-grid { grid-template-columns: 1fr; } .split.rev { direction: ltr; } }
       `}</style>
 
@@ -103,10 +103,10 @@ export default function Waermepumpe() {
             <h2 style={{ fontSize: '40px', letterSpacing: '-.02em', marginBottom: '16px' }}>Bis zu 70 %<br />staatliche Förderung</h2>
             <p style={{ color: 'var(--gray-700)', marginBottom: '24px' }}>Der Austausch einer alten Öl- oder Gasheizung wird massiv gefördert. Wir kümmern uns um den gesamten Antragsprozess bei BAFA und KfW – Sie bekommen die Förderung direkt ausgezahlt.</p>
             <ul className="foerd-list">
-              <li><span className="foerd-pct">30 %</span><span>Grundförderung für alle Eigenheimbesitzer</span></li>
-              <li><span className="foerd-pct">+20 %</span><span>Klimageschwindigkeitsbonus (frühzeitiger Heizungstausch)</span></li>
-              <li><span className="foerd-pct">+30 %</span><span>Einkommensbonus (bis 40.000 € Haushaltseinkommen)</span></li>
-              <li><span className="foerd-pct">+5 %</span><span>Effizienzbonus für natürliche Kältemittel (R290)</span></li>
+              <li><span className="foerd-pct">30&nbsp;%</span><span>Grundförderung für alle Eigenheimbesitzer</span></li>
+              <li><span className="foerd-pct">+20&nbsp;%</span><span>Klimageschwindigkeitsbonus (frühzeitiger Heizungstausch)</span></li>
+              <li><span className="foerd-pct">+30&nbsp;%</span><span>Einkommensbonus (bis 40.000 € Haushaltseinkommen)</span></li>
+              <li><span className="foerd-pct">+5&nbsp;%</span><span>Effizienzbonus für natürliche Kältemittel (R290)</span></li>
             </ul>
             <p style={{ marginTop: '16px', fontSize: '14px', color: 'var(--gray-500)' }}>Maximale Förderung bis zu 21.000 € pro Wohneinheit. Fördervoraussetzungen können sich ändern.</p>
           </div>
